@@ -1,0 +1,97 @@
+/**
+ * We Are Difrnt
+ * Project LESS
+ *
+ *
+ * :: Mixins
+ *
+ */
+
+// Border Radius
+.border-radius (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
+
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}
+
+// Text Shadow
+.text-shadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
+	text-shadow: @string;
+}
+
+// Box Shdow
+.box-shadow (@string) {
+	-webkit-box-shadow: @string;
+	-moz-box-shadow:    @string;
+	box-shadow:         @string;
+}
+
+// Inner Box Shadow
+.inner-shadow (@string) {
+	-webkit-box-shadow: inset @string;
+	-moz-box-shadow:    inset @string;
+	box-shadow:         inset @string;
+}
+
+// Transitions
+.transition(@transition: all linear .2s) {
+  -webkit-transition: @transition;
+  -moz-transition: @transition;
+  transition: @transition;
+}
+
+// Vertical Gradient
+.gradient (@startColor: #555, @endColor: #333) {
+	background-color: @endColor;
+	background-repeat: repeat-x;
+	background-image: -khtml-gradient(linear, left top, left bottom, from(@startColor), to(@endColor)); /* Konqueror */
+	background-image: -moz-linear-gradient(@startColor, @endColor); /* FF 3.6+ */
+	background-image: -ms-linear-gradient(@startColor, @endColor); /* IE10 */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @startColor), color-stop(100%, @endColor)); /* Safari 4+, Chrome 2+ */
+	background-image: -webkit-linear-gradient(@startColor, @endColor); /* Safari 5.1+, Chrome 10+ */
+	background-image: -o-linear-gradient(@startColor, @endColor); /* Opera 11.10 */
+	filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@startColor,@endColor)); /* IE6 & IE7 */
+	-ms-filter: %("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@startColor,@endColor); /* IE8+ */
+	background-image: linear-gradient(@startColor, @endColor); /* the standard */
+}
+
+// Opacity
+.opacity(@opacity: 100) {
+	filter: e(%("alpha(opacity=%d)", @opacity));
+	-khtml-opacity: @opacity / 100;
+	-moz-opacity: @opacity / 100;
+	opacity: @opacity / 100;
+}
+
+// User Can't Select Text
+.no-select{
+	-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+// Add class of cf to div to have good floats
+.cf:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+* html .cf             { zoom: 1; } /* IE6 */
+*:first-child+html .cf { zoom: 1; } /* IE7 */
+
+// Class To Center Align 
+.wrap{width:1000px; height:auto; margin:0 auto 0 auto;}
+
+// Fix for IE7 for Display:inline-block;
+.ie7-inline-block{
+	*display:inline;
+	*zoom:1;
+}

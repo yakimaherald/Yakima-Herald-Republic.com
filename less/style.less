@@ -1,0 +1,164 @@
+/**
+ * We Are Difrnt
+ * Project LESS
+ *
+ *
+ * :: Include Reset and Mixins & Vars
+ * :: Base Settings
+ * :: Typography
+ * :: Lists OL & UL
+ * :: UI
+ * :: App
+ *
+ *
+ */
+
+@import "reset.less";
+@import "base.less";
+@import "vars.less";
+
+/*------------------------------------*\
+  :: Base Settings
+\*------------------------------------*/
+body{
+  font-family:@font-family-sans;
+  font-size:@font-size; line-height:@line-height;
+  color:@color; position: relative;
+  -webkit-font-smoothing: antialiased; 
+
+  background:#fff;
+}
+
+a{color:@link; text-decoration:none; line-height: inherit;}
+a:hover{color:@link-hover; outline: 0;}
+a:focus{color:@link-focus;}
+a:active{outline: 0;}
+p a, p a:visited{line-height:inherit;}
+
+/*------------------------------------*\
+  :: Typography
+\*------------------------------------*/
+
+h1, h2, h3, h4, h5, h6{color:@heading-color; font-weight:@heading-weight; line-height:@heading-line-height;}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{line-height:inherit;}
+
+h1{font-size:46px; margin-bottom:12px;}
+h2{font-size:36px; margin-bottom:9px;}
+h3{font-size:28px; margin-bottom:9px;}
+h4{font-size:21px; margin-bottom:3px;}
+h5{font-size:18px; margin-bottom:3px; font-weight:normal;}
+h6{font-size:15px; font-weight:normal;}
+
+p{
+  font-size:@font-size; line-height:@line-height;
+  margin:0 0 9px;
+}
+
+em, i{font-style:italic; line-height:inherit;}
+strong, b{font-weight:bold; line-height:inherit;}
+small{font-size:60%; line-height:inherit;}
+
+blockquote, blockquote p{line-height:20px; color:#777;}
+blockquote{padding:0 0 0 15px; margin:0 0 18px;}
+blockquote cite{display:block; font-size:12px; color:#555;}
+blockquote cite:before{content: "\2014 \00A0";}
+blockquote cite a, blockquote cite a:visited{color:#555;}
+
+/*------------------------------------*\
+  :: Lists OL & UL
+\*------------------------------------*/
+
+ul, ol{margin-bottom:18px;}
+ul{list-style:none outside;}
+ol{list-style: decimal;}
+ol, ul.square, ul.circle, ul.disc{margin-left:30px;}
+ul.square{list-style:square outside;}
+ul.circle{list-style: circle outside;}
+ul.disc{list-style: disc outside;}
+li{margin-bottom:12px;}
+
+/*------------------------------------*\
+  :: UI
+\*------------------------------------*/
+.btn{
+  display:inline-block; padding:4px 10px 4px;
+  color:#333; text-align:center;
+  font-size:12px; letter-spacing:.5px;
+  line-height:18px;
+
+  .text-shadow(0 1px 1px rgba(255,255,255,.5));
+  .gradient(@white, darken(@white, 10%));
+  .border-radius(3px);
+  .inner-shadow(0 1px 1px rgba(255,255,255,0.5));
+  .no-select;
+
+  border:1px solid #2d2d2d;
+}
+
+.btn.red{
+  .btn;
+  color:@white;
+  .gradient(@red, @dark-red);
+  .text-shadow(0 1px 1px rgba(0,0,0,.8));
+}
+
+.btn.green{
+  .btn;
+  color:@white;
+  .gradient(@green, @dark-green);
+  .text-shadow(0 1px 1px rgba(0,0,0,.8));
+}
+
+.btn.blue{
+  .btn;
+  color:@white;
+  .gradient(@blue, @dark-blue);
+  .text-shadow(0 1px 1px rgba(0,0,0,.8));
+}
+
+.btn.orange{
+  .btn;
+  color:@white;
+  .gradient(@orange,@dark-orange);
+  .text-shadow(0 1px 1px rgba(0,0,0,.8));
+}
+
+.btn:hover{
+  background-position:0 -15px;
+  .transition(background-position);
+}
+
+.btn:active{
+  .inner-shadow(0 2px 4px rgba(0,0,0,0.5));
+}
+
+.btn.disabled,.btn[disabled]{
+  background-image:none;
+  background-color:darken(#fff, 10%);
+  .opacity(65);
+  .box-shadow(none);
+  cursor:default;
+}
+
+/*------------------------------------*\
+  :: Icons
+\*------------------------------------*/
+
+[class^="icon-"], [class*=" icon-"]{
+  display:inline-block;
+  width:14px; height:14px;
+  line-height:14px; vertical-align:text-top;
+  background-image: url(@icon-path);
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+
+  .ie7-inline-block;
+ }
+
+.icon-glass{background-position: 0 0;}
+.icon-music{background-position: -24px  0;}
+
+/*------------------------------------*\
+  :: App
+\*------------------------------------*/
+
