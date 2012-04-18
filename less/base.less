@@ -1,11 +1,11 @@
-/**
- * We Are Difrnt
- * Project LESS
+/*
+ * base.less
  *
+ * Copyright 2012 We Are Difrnt
  *
- * :: Mixins
- *
+ * Developed by @utroda, http://www.wearedifrnt.com.
  */
+
 
 // Border Radius
 .border-radius (@radius: 5px) {
@@ -76,20 +76,21 @@
 }
 
 // Add class of cf to div to have good floats
+/* For modern browsers */
+.cf:before,
 .cf:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
-    }
-* html .cf             { zoom: 1; } /* IE6 */
-*:first-child+html .cf { zoom: 1; } /* IE7 */
+    content:"";
+    display:table;
+}
 
-// Class To Center Align 
-.wrap{width:1000px; height:auto; margin:0 auto 0 auto;}
+.cf:after {
+    clear:both;
+}
 
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    zoom:1;
+}
 // Fix for IE7 for Display:inline-block;
 .ie7-inline-block{
 	*display:inline;

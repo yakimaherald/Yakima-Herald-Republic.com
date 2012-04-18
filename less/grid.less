@@ -1,0 +1,231 @@
+/*
+ * Grid.less
+ *
+ * Copyright 2012 We Are Difrnt
+ *
+ * Developed by @utroda, http://www.wearedifrnt.com.
+ */
+/*------------------------------------*\
+  :: Hide Classes
+\*------------------------------------*/
+.visible-phone { display: none; }
+.visible-tablet { display: none; }
+.visible-desktop { display: block; }
+.hidden-phone { display: block; }
+.hidden-tablet { display: block; }
+.hidden-desktop { display: none; }
+
+  
+/*
+
+  Grid starts with a row. It contains everything to its max-width
+    
+*/
+
+  .row{
+    max-width:1020px;
+    margin:0 auto;
+    overflow:hidden; clear:both;
+  } 
+
+/*
+
+Each Grid Item is a col this float objects so it still works
+in IE7 & IE8
+
+*/
+
+.col{float: left; margin-right:2%;}
+
+
+/*
+
+  Add your semantic classnames in alongside their corresponding spans here.
+  Not all modules are listed, some have span_x called directly on the object.
+
+  This is for desktop devices only
+
+*/
+
+    .span_1,
+    .footer-logo,
+    .rail_1,
+    .byline
+    {
+        width: 14.33%;
+    }
+    .span_2,
+    .rail,
+    .welcome,
+    .user-controls,
+    .weather,
+    {
+        width: 30.67%;
+    }
+    .span_3,
+    .related-stories,
+    .ad-300x250-endstory
+    {
+        width: 47%;
+    }
+    .span_4,
+    .top-ads,
+    .rail_4,
+    .photo-galleries,
+    .ad-300x250-instory
+    {
+        width: 63.33%;
+    }
+    .span_5,
+    .footer-top-ad-links {
+        width: 79.67%;
+    }
+    .span_6,
+    .polls,
+    .mobile,
+    .ad-300x250,
+    .events,
+    .ad-300x600,
+    .local-videos,
+    .niche-bar,
+    .ad-bar,
+    .footer-content,
+    .logo-bar-content,
+    .main-nav,
+    .hot-topics,
+    .latest-news,
+    .slider,
+    .article-controls,
+    .endstory-share{
+        margin-right:0;
+        width: 96%;
+    }
+
+
+/*------------------------------------*\
+  :: Phone Only Styles
+\*------------------------------------*/
+@media (max-width: 767px) {
+  // Show
+  .visible-phone { display: block; }
+  // Hide
+  .hidden-phone { display: none; }
+  // Hide everything else
+  .hidden-desktop { display: block; }
+  .visible-desktop { display: none; }
+
+
+  div.feed{
+    width:45.5%;
+    float:left;
+    margin-left:2%;
+  }
+    .byline{
+    width:30%;
+    float:left;
+    margin-right:2%;
+  }
+/*
+
+  Add your semantic classnames in alongside their corresponding spans here.
+  Not all modules are listed, some have span_x called directly on the object.
+
+*/
+  .span_1,
+  .span_2,
+  .span_3,
+  .span_4,
+  .span_5,
+  .span_6,
+  .col,
+  div.tag {
+    width:100%;
+    margin-left:0;
+  }
+
+
+  // App styles
+
+   a.nav-toggle{
+    color:#fff; padding:5px;
+    margin:0; font-size:20px;
+    font-weight:bold; margin:5px;
+    border:none; display:block;
+    width:95%;
+
+    span{ float:right; }
+  }
+  a.nav-toggle:hover{
+    color:#fff;
+  }
+  nav {}
+  nav a{
+    display:block; float:left;
+    width:45%; text-align:left;
+    text-indent:10px;
+  }
+  a.right-arrow{
+    background-position: -355px 3px;
+  }
+  section.tabs .tab dd a{font-size:14px;}
+  div.days{ font-size:11px; }
+  .footer-links ul li{ margin:5px; line-height:18px;}
+  ul.footer-sublinks{
+    margin:0;
+    li{display:inline; margin-right:5px;}
+  }
+  ul.breadcrumbs{
+    float:none;
+    margin:10px 0;
+  }
+  div.text-size{
+    float:none;
+    margin:10px 0;
+  }
+
+}
+/*------------------------------------*\
+  :: Tablet Only Styles
+\*------------------------------------*/
+@media (min-width: 768px) and (max-width: 979px) {
+  // Show
+  .visible-tablet { display: block; }
+  // Hide
+  .hidden-tablet { display: none; }
+  // Hide everything else
+  .hidden-desktop { display: block; }
+  .visible-desktop { display: none; }
+        
+
+  /*
+
+    Add your semantic classnames in alongside their corresponding spans here.
+    Not all modules are listed, some have span_x called directly on the object.
+
+  */
+
+    .span_6,
+    div.tag,
+    .footer-logo,
+    .footer-top-ad-links,
+    .section-feeds,
+    .footer-sublinks,
+    .ad-728x90
+    {
+        margin-right:0;
+        width:100%;
+    }
+
+  .ad-728x90{float:none; margin:0 auto 0 auto;}
+
+  nav a{font-size:11px;}
+  nav a.sub i{display:none;}
+  section.latest-news ul{height:200px;}
+  section.tabs .tab dd a{font-size:14px;}
+  div.days{ font-size:11px; }
+  ul.footer-sublinks{
+    margin:0;
+    li{display:inline; margin-right:5px;}
+  }
+
+}
