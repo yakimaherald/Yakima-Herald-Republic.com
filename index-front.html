@@ -1,37 +1,34 @@
-<!doctype html>
-<!--[if IE 7]> <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]> <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if IE 9]> <html class="no-js ie9 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!DOCTYPE html>
+<!--[if IE 7]><html class="no-js ie7" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Boot</title>
-  <meta name="description" content="">
-
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-
+  <title>Project Start</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width" />
+  <meta http-equiv="Refresh" content="900;url=?refresh=true">
+  <!-- Facebook -->
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
   <!-- CSS -->
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/lionbars.css">
-
-  <!-- JS Libs -->
-  <script src="js/mdzr.js"></script>
- 
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <!-- -->
+  <script src="js/libs/mdzr.js"></script>
   <!-- OAS SETUP begin -->
-<script>
-  var OAS_url = 'http://oascentral.yakima-herald.com/RealMedia/ads/',
-    OAS_sitepage = 'www.yakimaherald.com/homepage',
-    OAS_listpos = 'Middle,Right,Right2,Top,Position1,x01,x02,Bottom',
-    OAS_query = '',
-    OAS_rns = (Math.random() + "").substring(2, 11);
- 
-  document.write('<script type="text/javascript" src="' + OAS_url + 'adstream_mjx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '?' + OAS_query + '"><\/script>');
-</script>
+  <script>
+    var OAS_url = 'http://oascentral.yakima-herald.com/RealMedia/ads/',
+      OAS_sitepage = 'www.yakimaherald.com/homepage',
+      OAS_listpos = 'Middle,Right,Right2,Top,Position1,x01,x02,Bottom',
+      OAS_query = '',
+      OAS_rns = (Math.random() + "").substring(2, 11);
+   
+    document.write('<script type="text/javascript" src="' + OAS_url + 'adstream_mjx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '?' + OAS_query + '"><\/script>');
+  </script>
 </head>
-<body id="home">
-
+<body class="type-front">
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -41,287 +38,289 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-  <header class="cf">  
+  <header>
 
       <section class="top-bar">
 
-        <div class="row cf">    
-          
-          <div class="welcome col">
-            <p>Good Morning, its 9:00am February 27th 2012</p>
-            <form action="" method="post" accept-charset="utf-8">
-              <input type="text" class="input-search" placeholder="Type Phrase or Keyword, Hit Enter" />
-            </form>
-          </div><!-- / -->
+        <div class="row">
 
-          <div class="user-controls col">
+          <div class="col span_2">
+            <div class="welcome">
+              <p>Good Morning, its 9:00am February 27th 2012</p>
+              <form action="" method="post" accept-charest="utf-8">
+                <input type="text" class="input-search" placeholder="Type Phrase Keyword, Hit Enter" />
+              </form>
+            </div>
+          </div>
+          <div class="col span_2">
+            <div class="user-controls">
               <ul>
-                <li><a href="" title="" class="btn blue">Login or Register</a></li>
-                <li><a href="" title=""><i class="icon-subscribe"></i> Subscribe</a></li>
-                <li><a href="" title=""><i class="icon-contact"></i> Contact</a></li>
-              </ul><!-- / -->
-
-              <ul class="hidden-tablet">
-                <li><a href="" title=""><i class="icon-twitter"></i></a></li>
-                <li><a href="" title=""><i class="icon-facebook"></i></a></li>
-                <li><a href="" title=""><i class="icon-rss"></i></a></li>
-                <li><a href="" title=""><img src="images/paper-roll.png" />Home Delivery</a></li>
-              </ul><!-- / -->
-          </div><!-- / -->
-
-          <div class="weather col hidden-phone">
-            <div class="ad-120x60"><img src="http://placehold.it/120x60" /></div>
-
-            <div class="weather-text">
-              <span class="weather-text-title">Partly Cloudy</span>
-              <span class="weather-text-temp">47</span>
-              <span class="weather-text-hi-low">Hi 53 | Low 31</span>
+                <li><a href="" class="btn blue  small">Login or Register</a></li>
+                <li><a href=""><i class="icon-ok"> </i>Subscribe</a></li>
+                <li><a href=""><i class="icon-envelope"> </i>Contact</a></li>
+              </ul>
+              <ul>
+                <li><a href=""><i class="icon-facebook-sign"> </i>Facebook</a></li>
+                <li><a href=""><i class="icon-twitter-sign"> </i>Twitter</a></li>
+                <li><a href=""><i class="icon-signin"> </i>Home Delivery</a></li>
+              </ul>
             </div>
-          </div><!-- / -->
+          </div>
+          <div class="col span_2">
+            <div class="weather  hidden-tablet hidden-phone">
+                <div class="ad-120x60"><img src="http://placehold.it/120x60" /></div>
 
-        </div>
-
-      </section><!-- / -->
-
-
-      <section class="logo-bar">
-        
-        <div class="row cf">
-
-          <section class="logo-bar-content col">
-
-            <div class="ad-728x90 fr hidden-phone">
-              <SCRIPT LANGUAGE=JavaScript>
-              <!--
-              OAS_RICH('Top');
-              //-->
-              </SCRIPT>
+                <div class="weather-text">
+                  <span class="weather-text-title">Partly Cloudy</span>
+                  <span class="weather-text-temp">47</span>
+                  <span class="weather-text-hi-low">Hi 53 | Low 31</span>
+                </div>
             </div>
-            
-          </section><!-- / -->
+          </div>
           
         </div><!-- / -->
 
-      </section><!-- / -->
+      </section><!-- /.top-bar -->
+
+      <section class="logo-bar">
+
+        <div class="row">
+          
+            <div class="col span_1">Logo</div>
+            <div class="col span_5">
+              <div class="ad-728x90">
+                <script>
+                  OAS_RICH('Top');
+                </script>
+              </div>
+            </div>
+
+        </div><!-- / -->
+        
+      </section><!-- /.logo-bar -->
 
       <section class="navigation-bar">
 
-        <div class="row cf">
+        <div class="row">
 
-          <nav class="main-nav col" data-menu-content="data-menu-items.html">
-            <a href="#" class="visible-phone nav-toggle">
-              Sections <span>+</span>
-            </a>
-            <ul id="nav-list" class="hidden-phone">
-              <li><a href="" title="Home"><i class="icon-home"></i>&nbsp;</a></li>
-              <li><a id="news" href="" title="News" data-section="news">News</a></li>
-              <li><a href="" title="Sports" data-section="sports">Sports</a></li>
-              <li><a href="" title="Community" data-section="community">Community</a></li>
-              <li><a href="" title="Entertainment" data-section="entertainment">Entertainment</a></li>
-              <li><a href="" title="Valley Life" data-section="valleylife">Valley Life</a></li>
-              <li><a href="" title="Opinion" data-section="opinion">Opinion</a></li>
-              <li><a href="" title="Blogs" data-section="blogs">Blogs</a></li>
-              <li><a href="" title="Photos/Videos" data-section="photos">Photos/Videos</a></li>
-              <li><a href="" title="Classifieds" class="sub"><i class="icon-classifieds"></i> Classifieds</a></li>
-              <li><a href="" title="Jobs" class="sub"><i class="icon-jobs"></i> Jobs</a></li>
-              <li><a href="" title="Homes" class="sub"><i class="icon-homes"></i>Homes</a></li>
-              <li><a href="" title="Autos" class="sub"><i class="icon-autos"></i> Autos</a></li>
-            </ul>
+          <div class="col span_6">
 
-          </nav>
-          
-          <section id="nav-objects"></section>
+            <nav class="main-nav" data-menu-content="data-menu-items.html">
+              <a href="#" class="visible-phone visible-tablet nav-toggle">
+                Sections <span>+</span>
+              </a>
+              <ul id="nav-list" class="hidden-phone hidden-tablet">
+                <li><a href="" title="Home"><i class="icon-home"></i>&nbsp;</a></li>
+                <li><a id="news" href="" title="News" data-section="news">News</a></li>
+                <li><a href="" title="Sports" data-section="sports">Sports</a></li>
+                <li><a href="" title="Community" data-section="community">Community</a></li>
+                <li><a href="" title="Entertainment" data-section="entertainment">Entertainment</a></li>
+                <li><a href="" title="Valley Life" data-section="valleylife">Valley Life</a></li>
+                <li><a href="" title="Opinion" data-section="opinion">Opinion</a></li>
+                <li><a href="" title="Blogs" data-section="blogs">Blogs</a></li>
+                <li><a href="" title="Photos/Videos" data-section="photos">Photos/Videos</a></li>
+                <li><a href="" title="Classifieds" class="sub"><i class="icon-list"></i> Classifieds</a></li>
+                <li><a href="" title="Jobs" class="sub"><i class="icon-user"></i> Jobs</a></li>
+                <li><a href="" title="Homes" class="sub"><i class="icon-tag"></i>Homes</a></li>
+                <li><a href="" title="Autos" class="sub"><i class="icon-road"></i> Autos</a></li>
+              </ul>
+            </nav>
+
+            <section id="nav-objects"></section>
+
+          </div>
 
         </div>
         
-      </section><!-- / -->
-
+      </section><!-- /.navigation-bar -->
+    
   </header><!-- /header -->
 
- 
-
-  <div class="row cf">
-    <center><h1 class="page-title"><span>News</span></h2></center>
-  </div><!-- / -->
-
+  
   <div class="row">
 
-      <div class="col span_1">
+    <div class="col span_2 fr">
+      <section class="ad-300x600">
+        
+        <script>
+          OAS_RICH('Right');
+        </script>
 
-        <section class="latest-news">
+      </section><!-- /.ad-300x600 -->
+    </div>
 
-          <h2>Latest News <a href="" class="arrow"></a></h2>
+    <div class="col span_1">
+     <section class="latest-news">
 
-          <div class="top-story">
+        <h2 class="news">Latest News <a href="" class="icon-arrow-right"></a></h2>
+
+        <div class="top-story">
+          <a href="" title="">
+            <h5>This is a really long article title for.</h5>
+            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh cel celit auctor aliquest. Aenean sollicitudin.</p>
+          </a>
+        </div>
+
+        <ul id="lb">
+          <li>
             <a href="" title="">
-                <h5>This is a really long article title for.</h5>
-                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin.</p>
+              <span class="icon-exclamation-sign"></span>
+              <time>08:03AM</time><br />
+              <p>Sunnside Man's body found near Granger</p>
             </a>
-          </div><!-- / -->
-          
-          <ul id="lb" class="sub">
-            <li>
-              <a href="" title="">
-                <span></span>
-                <time>08:03AM</time><br />
-                <p>Sunnyside man's body found near Granger</p>
-              </a>
-            </li>
-            <li>
-              <a href="" title="">
-                <span class="photo"></span>
-                <time>08:03AM</time><br />
-                <p>Sunnyside man's body found near Granger</p>
-              </a>
-            </li>
-            <li>
-              <a href="" title="">
-                <span class="file"></span>
-                <time>08:03AM</time><br />
-                <p>Sunnyside man's body found near Granger</p>
-              </a>
-            </li>
-            <li>
-              <a href="" title="">
-                <span class="video"></span>
-                <time>08:03AM</time><br />
-                <p>Sunnyside man's body found near Granger</p>
-              </a>
-            </li>
-            <li>
-              <a href="" title="">
-                <span></span>
-                <time>08:03AM</time><br />
-                <p>Sunnyside man's body found near Granger</p>
-              </a>
-            </li>
-            <li>
-              <a href="" title="">
-                <span></span>
-                <time>08:03AM</time><br />
-                <p>Sunnyside man's body found near Granger</p>
-              </a>
-            </li>
-            <li>
-              <a href="" title="">
-                <span></span>
-                <time>08:03AM</time><br />
-                <p>Sunnyside man's body found near Granger</p>
-              </a>
-            </li>
-          </ul><!-- / -->
+          </li>
+          <li>
+            <a href="" title="">
+              <span class="icon-exclamation-sign"></span>
+              <time>08:03AM</time><br />
+              <p>Sunnside Man's body found near Granger</p>
+            </a>
+          </li>
+          <li>
+            <a href="" title="">
+              <span class="icon-camera"></span>
+              <time>08:03AM</time><br />
+              <p>Sunnside Man's body found near Granger</p>
+            </a>
+          </li>
+          <li>
+            <a href="" title="">
+              <span class="icon-film"></span>
+              <time>08:03AM</time><br />
+              <p>Sunnside Man's body found near Granger</p>
+            </a>
+          </li>
+          <li>
+            <a href="" title="">
+              <span class="icon-file"></span>
+              <time>08:03AM</time><br />
+              <p>Sunnside Man's body found near Granger</p>
+            </a>
+          </li>
+          <li>
+            <a href="" title="">
+              <span class="icon-exclamation-sign"></span>
+              <time>08:03AM</time><br />
+              <p>Sunnside Man's body found near Granger</p>
+            </a>
+          </li>
+        </ul><!-- /lb -->
 
-        </section><!-- / -->
+      </section>
+    </div>
 
-      </div><!-- / -->
+    <div class="col span_3">
+            <section id="reSlider">
+        <div id="pane">
+           <figure>
+             <img src="http://placehold.it/600x250" />
+             <figcaption>
+              <h1>This is a title 1</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.</p>
+             </figcaption>
+           </figure>
+           <figure>
+             <img src="http://placehold.it/600x250" />
+             <figcaption>
+              <h1>This is a title 2</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.</p>
+             </figcaption>
+           </figure>
+            <figure>
+             <img src="http://placehold.it/600x250" />
+             <figcaption>
+              <h1>This is a title 3</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.</p>
+             </figcaption>
+           </figure>
+           <figure>
+             <img src="http://placehold.it/600x250" />
+             <figcaption>
+              <h1>This is a title 4</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.</p>
+             </figcaption>
+           </figure>
+          </div>
+        <nav>
+          <ul id="pagination"></ul><!-- / -->
+        </nav>
+      </section><!-- / -->
+    </div>
 
-      <div class="col span_3">
-            
-            <section class="slider">
+    <div class="col span_4 expand-tablet">
 
-              <div id="sizer">
-
-              <ul id="slides" class="slides">
-                <li class="slide active" data-slide="0">
-                    <a href="" title="">
-                      <div class="slide-attachment"><img src="images/slides/1.jpg" /></div>
-                      <div class="slide-content">
-                        <h1>This is a really long title for a story</h1>
-                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                      </div>
-                    </a>
-                </li>
-                <li class="slide"  data-slide="1">
-                    <a href="" title="">
-                      <div class="slide-attachment"><img src="images/slides/2.jpg" /></div>
-                      <div class="slide-content">
-                        <h1>This is a really long title for a story22</h1>
-                        <p>This is Photoshop's version  of Lorem Ip2sum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. asdfsadf sadf asd f asdfa sfas dfasfas f,sf sa dfas df saf asd fsad .fas fas df asf as dfas dfas d.f sadf asf asdfs af.sad f</p>
-                      </div>
-                    </a>
-                </li>
-                <div class="slider-controls">
-                  <ul id="">
-                    <a href="#" class="left-arrow"><img src="images/left-arrow.png" /></a>
-                    <ul id="slider-btns"></ul>
-                    <a href="#" class="right-arrow"><img src="images/right-arrow.png" /></a>
-                  </ul><!-- / -->
-                </div>
-              </ul><!-- / -->
-
-            </div>
-              
-            </section><!-- / -->
-
-      </div><!-- / -->
-
-      <div class="col span_2 fr">
-        <section class="ad-300x600-sub hidden-phone">
-          
-                      <SCRIPT LANGUAGE=JavaScript>
-                <!--
-                OAS_RICH('Right');
-                //-->
-                </SCRIPT>
-
-        </section><!-- / -->
-      </div><!-- / -->
-
-    <div class="col span_4">
-
-      <section class="twitter-feed cf">
-          <div class="twitter-status"><img src="images/ajax-loader.gif" /></div>
-          <div class="twitter-time"></div>
+      <section class="twitter-feed">
+        <div class="twitter-status" id="status"><div class="twitter-status-notch"></div></div>
+        <div class="twitter-about">YHR Twitter Said About <span id="twitter-time"></span> - <a href="" class="btn twitter tiny"><i class="icon-twitter-sign"></i> Follow Us</a> </div>
       </section><!-- / -->
 
     </div>
 
-      <section class="photo-galleries col">
-              
-              <h2>Photos <a href="" class="arrow"></a></h2>
+    <div class="col span_4 expand-tablet">
 
-              <ul>
-                <li>
-                  <a href="" title="">
-                    <img src="http://placehold.it/146x93" />
-                    Gallery Title
-                  </a>
-                </li>
-                <li>
-                  <a href="" title="">
-                    <img src="http://placehold.it/146x93" />
-                    Gallery Title
-                  </a>
-                </li>
-                <li>
-                  <a href="" title="">
-                    <img src="http://placehold.it/146x93" />
-                    Gallery Title
-                  </a>
-                </li>
-                <li>
-                  <a href="" title="">
-                    <img src="http://placehold.it/146x93" />
-                    Gallery Title
-                  </a>
-                </li>
-              </ul><!-- / -->
+      <section class="photo-galleries">
 
-            </section><!-- / -->
+          <h2 class="photo-video">Photos <a href="" class="icon-arrow-right"></a></h2>
+          <ul>
+            <li>
+              <a href="" title="">
+                <img src="http://placehold.it/146x93" />
+                Gallery Title
+              </a>
+            </li>
+            <li>
+              <a href="" title="">
+                <img src="http://placehold.it/146x93" />
+                Gallery Title
+              </a>
+            </li>
+            <li>
+              <a href="" title="">
+                <img src="http://placehold.it/146x93" />
+                Gallery Title
+              </a>
+            </li>
+            <li>
+              <a href="" title="">
+                <img src="http://placehold.it/146x93" />
+                Gallery Title
+              </a>
+            </li>
+          </ul><!-- / -->
 
-  </div>
+        </section>
 
-  <div class="row cf">
+    </div>
 
-    <section class="col span_2">
+  </div><!-- /.row -->
 
+  <div class="row">
+
+    <div class="col span_2">
       <section class="polls">
-
-        <h2>Community Polls</h2>
-        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin.</p>
+        <h2 class="communities">Community Polls</h2>
+        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin.</p> 
 
         <form action="" method="post">
-          
+
           <ul>
             <li><label><input type="radio" name="opt1" value="opt1" /> This is option number 1</label></li>
             <li><label><input type="radio" name="opt2" value="opt2" /> This is option number 2</label></li>
@@ -330,640 +329,577 @@
           </ul><!-- / -->
 
           <center>
-            <a href="" class="btn">See Results</a>
-            <input type="submit" value="Submit Vote" name="vote" class="btn blue"/>
+            <a href="" class="btn small">See Results</a>
+            <input type="submit" value="Submit Vote" name="vote" class="btn blue small" />
           </center>
+
         </form>
 
       </section><!-- /.polls -->
-       
-        <section class="ad-300x250">
-              
-              <SCRIPT LANGUAGE=JavaScript>
-              <!--
-              OAS_RICH('Middle');
-              //-->
-              </SCRIPT>
 
-        </section><!-- / -->
-    
-    </section>
+      <section class="ad-300x250">
 
-   <section class="col span_2">
-          
-          <section class="local-videos-sub">
-            
-            <h2>Local Videos</h2>
-            <img src="http://placehold.it/300x512" />
+        <script>
+          OAS_RICH('Middle');
+        </script>
+        
+      </section><!-- /.ad-300x250 -->
+    </div>
 
-          </section><!-- / -->
-   </section>
+    <div class="col span_2">
+        <section class="local-videos">
 
+          <h2 class="photo-video">Local Videos</h2>
+          <img src="http://placehold.it/300x512" />
 
-    <section class="col span_2">
+        </section>
+    </div>
+
+    <div class="col span_2">
 
       <section class="events">
-        
-        <h2>Community Events <a href="" class="arrow"></a></h2>
+
+        <h2 class="communities">Community Events <a href="" class="icon-arrow-right"></a></h2>
+
         <div class="days">
-          <span class="fl">
-            <a href="">Today</a> | <a href="">Tomorrow</a>
-          </span>
-          <span class="fr">
-            <a href="">Day 3</a> | <a href="">Day 4</a> | <a href="">Day 5</a>
-          </span>
+          <div class="fl"><a href="">Today</a> | <a href="">Tomorrow</a></div>
+          <div class="fr"><a href="">Day 3</a> | <a href="">Day 4</a> | <a href="">Day 5</a></div>
         </div>
 
         <div class="event-listing">
-          <a href="" title="">
-            <div class="date-module cf">
-              <span class="month">FEB</span>
-              <span class="day">22</span>
-            </div>
-            <h5>Trans-Siberian Orchestra</h5>
-            <p>Richland First Church of Something Here...</p>
-          </a>
-        </div>
-        <div class="event-listing">
-          <a href="" title="">
+          <a href="">
             <div class="date-module">
-              <span class="month">FEB</span>
-              <span class="day">22</span>
+              <div class="month">FEB</div>
+              <div class="day">22</div>
             </div>
-            <h5>Trans-Siberian Orchestra</h5>
-            <p>Richland First Church of Something Here...</p>
-          </a>
-        </div>
-        <div class="event-listing">
-          <a href="" title="">
-            <div class="date-module">
-              <span class="month">FEB</span>
-              <span class="day">22</span>
-            </div>
-            <h5>Trans-Siberian Orchestra</h5>
-            <p>Richland First Church of Something Here...</p>
-          </a>
-        </div>
-        <div class="event-listing">
-          <a href="" title="">
-            <div class="date-module">
-              <span class="month">FEB</span>
-              <span class="day">22</span>
-            </div>
+
             <h5>Trans-Siberian Orchestra</h5>
             <p>Richland First Church of Something Here...</p>
           </a>
         </div>
 
+        <div class="event-listing">
+          <a href="">
+            <div class="date-module">
+              <div class="month">FEB</div>
+              <div class="day">22</div>
+            </div>
 
-        <a href="" class="btn blue">Add Your Event - For Free</a>
+            <h5>Trans-Siberian Orchestra</h5>
+            <p>Richland First Church of Something Here...</p>
+          </a>
+        </div>
+
+        <div class="event-listing">
+          <a href="">
+            <div class="date-module">
+              <div class="month">FEB</div>
+              <div class="day">22</div>
+            </div>
+
+            <h5>Trans-Siberian Orchestra</h5>
+            <p>Richland First Church of Something Here...</p>
+          </a>
+        </div>
+
+        <div class="event-listing">
+          <a href="">
+            <div class="date-module">
+              <div class="month">FEB</div>
+              <div class="day">22</div>
+            </div>
+
+            <h5>Trans-Siberian Orchestra</h5>
+            <p>Richland First Church of Something Here...</p>
+          </a>
+        </div>
+
+        <a href="" class="btn blue full-width">Add Your Event - For Free</a>
 
       </section><!-- /.events -->
 
-        <section class="facebook-module hidden-phone hidden-tablet">
-          
-          <div class="fb-like-box" data-href="https://www.facebook.com/yakimaheraldrepublic" data-width="300" data-height="250" data-show-faces="false" data-stream="true" data-header="false"></div>
+      <section class="facebook-module hidden-phone hidden-tablet">
+          <div class="fb-like-box" data-href="https://www.facebook.com/yakimaheraldrepublic" data-width="320" data-height="250" data-show-faces="false" data-stream="true" data-header="false"></div>
+      </section><!-- /.facebook-module -->
 
-        </section><!-- / -->
+    </div>
 
-    </section>
+  </div> <!-- /.row -->
 
-    <section class="section-feeds col span_6">
+  <div class="row">
+
+    <div class="col span_6">
+      <section class="section-feeds">
 
         <div class="feed">
-          <h2>Valley Life <a href="" class="arrow"></a></h2>
-          <div class="top-story cf">
-            <a href="">
-              <img src="http://placehold.it/146x93" />
-              <h4>This is a really long article title for a story.</h4>
-            </a>
+          <h2 class="valley-life">Valley Life <a href="" class="icon-arrow-right"></a></h2>
+          <div class="top-story">
+            <img src="http://placehold.it/146x93" />
+            <h4>This is a really long article title for a story.</h4>
           </div>
-          <ul>
-            <li><a href="" title="">This is a title from thisas</a></li>
-            <li><a href="" title="">This is a title from thisas</a></li>
-            <li><a href="" title="">This is a title from thisas</a></li>
-            <li><a href="" title="">This is a title from thisas</a></li>
-            <li><a href="" title="">This is a title from thisas</a></li>
-            <li><a href="" title="">This is a title from thisas</a></li>
-          </ul><!-- / -->
 
+            <ul>
+              <li><a href="" title="">This is a title from this as</a></li>
+              <li><a href="" title="">This is a title from this as</a></li>
+              <li><a href="" title="">This is a title from this as</a></li>
+              <li><a href="" title="">This is a title from this as</a></li>
+              <li><a href="" title="">This is a title from this as</a></li>
+              <li><a href="" title="">This is a title from this as</a></li>
+          </ul><!-- / -->
         </div>
 
         <div class="feed">
-          <h2>Valley Life <a href="" class="arrow"></a></h2>
-          <div class="top-story cf">
-            <a href="">
-              <img src="http://placehold.it/146x93" />
-              <h4>This is a really long article title for a story.</h4>
-            </a>
+          <h2 class="opinion">Opinion<a href="" class="icon-arrow-right"></a></h2>
+          <div class="top-story">
+            <img src="http://placehold.it/146x93" />
+            <h4>This is a really long article title for a story.</h4>
           </div>
-          <ul>
-            <li><a href="" title="">This is a title from thisas</a></li>
-            <li><a href="" title="">This is a title from thisas</a></li>
-            <li><a href="" title="">This is a title from thisas</a></li>
-            <li><a href="" title="">This is a title from thisas</a></li>
-            <li><a href="" title="">This is a title from thisas</a></li>
-            <li><a href="" title="">This is a title from thisas</a></li>
-          </ul><!-- / -->
 
+            <ul>
+              <li><a href="" title="">This is a title from this as</a></li>
+              <li><a href="" title="">This is a title from this as</a></li>
+              <li><a href="" title="">This is a title from this as</a></li>
+              <li><a href="" title="">This is a title from this as</a></li>
+              <li><a href="" title="">This is a title from this as</a></li>
+              <li><a href="" title="">This is a title from this as</a></li>
+          </ul><!-- / -->
         </div>
 
         <div class="feed">
-          <h2>Valley Life <a href="" class="arrow"></a></h2>
-          <div class="top-story cf">
-            <a href="">
-              <img src="http://placehold.it/146x93" />
-              <h4>This is a really long article title for a story.</h4>
-            </a>
+          <h2 class="blogs">Blogs <a href="" class="icon-arrow-right"></a></h2>
+          <div class="top-story">
+            <img src="http://placehold.it/146x93" />
+            <h4>This is a really long article title for a story.</h4>
           </div>
-          <ul>
-            <li><a href="" title="">This is a title from thisas</a></li>
-            <li><a href="" title="">This is a title from thisas</a></li>
-            <li><a href="" title="">This is a title from thisas</a></li>
-            <li><a href="" title="">This is a title from thisas</a></li>
-            <li><a href="" title="">This is a title from thisas</a></li>
-            <li><a href="" title="">This is a title from thisas</a></li>
-          </ul><!-- / -->
 
+            <ul>
+              <li><a href="" title="">This is a title from this as</a></li>
+              <li><a href="" title="">This is a title from this as</a></li>
+              <li><a href="" title="">This is a title from this as</a></li>
+              <li><a href="" title="">This is a title from this as</a></li>
+              <li><a href="" title="">This is a title from this as</a></li>
+              <li><a href="" title="">This is a title from this as</a></li>
+          </ul><!-- / -->
         </div>
 
         <div class="feed">
-          <h2>Valley Life <a href="" class="arrow"></a></h2>
-          <div class="top-story cf">
-            <a href="">
-              <img src="http://placehold.it/146x93" />
-              <h4>This is a really long article title for a story.</h4>
-            </a>
+          <h2 class="entertainment">Entertainment <a href="" class="icon-arrow-right"></a></h2>
+          <div class="top-story">
+            <img src="http://placehold.it/146x93" />
+            <h4>This is a really long article title for a story.</h4>
           </div>
-          <ul>
-            <li><a href="" title="">This is a title from thisas</a></li>
-            <li><a href="" title="">This is a title from thisas</a></li>
-            <li><a href="" title="">This is a title from thisas</a></li>
-            <li><a href="" title="">This is a title from thisas</a></li>
-            <li><a href="" title="">This is a title from thisas</a></li>
-            <li><a href="" title="">This is a title from thisas</a></li>
+
+            <ul>
+              <li><a href="" title="">This is a title from this as</a></li>
+              <li><a href="" title="">This is a title from this as</a></li>
+              <li><a href="" title="">This is a title from this as</a></li>
+              <li><a href="" title="">This is a title from this as</a></li>
+              <li><a href="" title="">This is a title from this as</a></li>
+              <li><a href="" title="">This is a title from this as</a></li>
           </ul><!-- / -->
-
         </div>
-
 
       </section>
+    </div>
 
-  </div>
+  </div> <!-- /.row -->
 
-<div class="row cf">
-      
-      <section class="tabs col span_2">
+  <div class="row"> 
 
-          <dl class="tab">
-            <dd><a href="#sports" class="active">Sports</a></dd>
-            <dd><a href="#opinion">Opinion</a></dd>
-            <dd><a href="#features">Features</a></dd>
-          </dl>
+    <div class="col span_2">
+      <section class="tabs">
 
-            <ul class="tabs-content">
-              <li class="active" id="sports">
-                <ul>
-                  <li>
-                    <a href="" title="">
-                      <img src="http://placehold.it/75x50" />
-                      <h5>This is a really long article title.</h5>
-                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor.</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" title="">
-                      <h5>This is a really long article title.</h5>
-                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" title="">
-                      <h5>This is a really long article title.</h5>
-                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" title="">
-                      <h5>This is a really long article title.</h5>
-                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" title="">
-                      <h5>This is a really long article title.</h5>
-                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida</p>
-                    </a>
-                  </li>
-                </ul><!-- / -->
-                <a href="" title="" class="tab-link">View All Sports Stories</a>
-              </li>
-              <li  id="opinion">
-                <ul>
-                  <li>
-                    <a href="" title="">
-                      <img src="http://placehold.it/75x50" />
-                      <h5>This is a really long article title.</h5>
-                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor.</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" title="">
-                      <h5>This is a really long article title.</h5>
-                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" title="">
-                      <h5>This is a really long article title.</h5>
-                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" title="">
-                      <h5>This is a really long article title.</h5>
-                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" title="">
-                      <h5>This is a really long article title.</h5>
-                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida</p>
-                    </a>
-                  </li>
-                </ul><!-- / -->
-                <a href="" title="" class="tab-link">View All Opinion Stories</a>
-              </li>
-              <li  id="features">
-                <ul>
-                  <li>
-                    <a href="" title="">
-                      <img src="http://placehold.it/75x50" />
-                      <h5>This is a really long article title.</h5>
-                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor.</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" title="">
-                      <h5>This is a really long article title.</h5>
-                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" title="">
-                      <h5>This is a really long article title.</h5>
-                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" title="">
-                      <h5>This is a really long article title.</h5>
-                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" title="">
-                      <h5>This is a really long article title.</h5>
-                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida</p>
-                    </a>
-                  </li>
-                </ul><!-- / -->
-                <a href="" title="" class="tab-link">View All Feature Stories</a>
-              </li>
-            </ul><!-- /.events -->
+        <dl class="tab">
+          <dd><a href="#sports" class="active cat-sports">Sports</a></dd>
+          <dd><a href="#opinion" class="cat-opinion">Opinion</a></dd>
+          <dd><a href="#features" class="cat-blogs">Features</a></dd>
+        </dl>
+
+        <ul class="tabs-content">
+          <li class="active" id="sports">
+            <div class="story">
+              <a href="">
+                <img src="http://placehold.it/75x50" />
+                <h5>This is a really long article title.</h5>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor.</p>
+              </a>
+            </div>
+            <div class="story">
+              <a href="">
+                <h5>This is a really long article title.</h5>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor.</p>
+              </a>
+            </div>
+            <div class="story">
+              <a href="">
+                <h5>This is a really long article title.</h5>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor.</p>
+              </a>
+            </div>
+            <div class="story">
+              <a href="">
+                <h5>This is a really long article title.</h5>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor.</p>
+              </a>
+            </div>
+            <div class="story">
+              <a href="">
+                <h5>This is a really long article title.</h5>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor.</p>
+              </a>
+            </div>
+             <a href="" title="" class="tab-link">View All Sports Stories</a>
+          </li>
+          <li id="opinion">
+            <div class="story">
+              <a href="">
+                <img src="http://placehold.it/75x50" />
+                <h5>This is a really long article title.</h5>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor.</p>
+              </a>
+            </div>
+            <div class="story">
+              <a href="">
+                <h5>This is a really long article title.</h5>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor.</p>
+              </a>
+            </div>
+            <div class="story">
+              <a href="">
+                <h5>This is a really long article title.</h5>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor.</p>
+              </a>
+            </div>
+            <div class="story">
+              <a href="">
+                <h5>This is a really long article title.</h5>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor.</p>
+              </a>
+            </div>
+            <div class="story">
+              <a href="">
+                <h5>This is a really long article title.</h5>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor.</p>
+              </a>
+            </div>
+             <a href="" title="" class="tab-link">View All Sports Stories</a>
+          </li>
+          <li id="features">
+            <div class="story">
+              <a href="">
+                <img src="http://placehold.it/75x50" />
+                <h5>This is a really long article title.</h5>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor.</p>
+              </a>
+            </div>
+            <div class="story">
+              <a href="">
+                <h5>This is a really long article title.</h5>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor.</p>
+              </a>
+            </div>
+            <div class="story">
+              <a href="">
+                <h5>This is a really long article title.</h5>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor.</p>
+              </a>
+            </div>
+            <div class="story">
+              <a href="">
+                <h5>This is a really long article title.</h5>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor.</p>
+              </a>
+            </div>
+            <div class="story">
+              <a href="">
+                <h5>This is a really long article title.</h5>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor.</p>
+              </a>
+            </div>
+             <a href="" title="" class="tab-link">View All Sports Stories</a>
+          </li>
+        </ul>
         
       </section><!-- /.tabs -->
-
-          <section class="tabs col span_4 hidden-phone">
+    </div>
+    <div class="col span_4">
+        <section class="tabs">
 
           <dl class="tab">
-            <dd><a href="#jobs" class="active">Jobs</a></dd>
-            <dd><a href="#homes">Homes</a></dd>
-            <dd><a href="#autos">Autos</a></dd>
+            <dd><a href="#sports" class="active">Jobs</a></dd>
+            <dd><a href="#opinion">Houses</a></dd>
+            <dd><a href="#features">Autos</a></dd>
           </dl>
 
-            <ul class="tabs-content">
-              <li class="active" id="jobs">
-                <div class="top-ads-content cf">
-                  <ul class="job-listings">
-                    <li>
-                      <a href="" title="">
-                        <p>This is a really really long job title<br /><strong>by a company name</strong></p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="" title="">
-                        <p>This is a really really long job title<br /><strong>by a company name</strong></p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="" title="">
-                        <p>This is a really really long job title<br /><strong>by a company name</strong></p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="" title="">
-                        <p>This is a really really long job title<br /><strong>by a company name</strong></p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="" title="">
-                        <p>This is a really really long job title<br /><strong>by a company name</strong></p>
-                      </a>
-                    </li>
-                  </ul><!-- / -->
-                  <div class="top-ads-job-player"></div>
+          <ul class="tabs-content">
+            <li class="active" id="sports">
+              <div class="job-listings">
+
+                <div class="listing">
+                  <a href="" title="">
+                    <p>This is a really really long job title<br /><strong>by a company name</strong></p>
+                  </a>
                 </div>
-                <a href="" title="" class="tab-link">View All Sports Stories</a>
-              </li>
-              <li  id="homes">
-                <ul>
-                  <li>
-                    <a href="" title="">
-                      <img src="http://placehold.it/75x50" />
-                      <h5>This is a really long article title.</h5>
-                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor.</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" title="">
-                      <h5>This is a really long article title.</h5>
-                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" title="">
-                      <h5>This is a really long article title.</h5>
-                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" title="">
-                      <h5>This is a really long article title.</h5>
-                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" title="">
-                      <h5>This is a really long article title.</h5>
-                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida</p>
-                    </a>
-                  </li>
-                </ul><!-- / -->
-                <a href="" title="" class="tab-link">View All Opinion Stories</a>
-              </li>
-              <li  id="autos">
-                <ul>
-                  <li>
-                    <a href="" title="">
-                      <img src="http://placehold.it/75x50" />
-                      <h5>This is a really long article title.</h5>
-                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor.</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" title="">
-                      <h5>This is a really long article title.</h5>
-                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" title="">
-                      <h5>This is a really long article title.</h5>
-                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" title="">
-                      <h5>This is a really long article title.</h5>
-                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" title="">
-                      <h5>This is a really long article title.</h5>
-                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida</p>
-                    </a>
-                  </li>
-                </ul><!-- / -->
-                <a href="" title="" class="tab-link">View All Feature Stories</a>
-              </li>
-            </ul><!-- /.events -->
-        
-      </section><!-- /.tabs -->
 
-  </div>
+              </div>
+                <div class="job-player"></div>
+               <a href="" title="" class="tab-link">View All Sports Stories</a>
+            </li>
+            <li id="opinion">
+   
+               <a href="" title="" class="tab-link">View All Sports Stories</a>
+            </li>
+            <li id="features">
 
-  <div class="row">
-
-      <section class="niche-bar col hidden-phone hidden-tablet">
-        
-        <h2>Other Publications</h2>
-
-        <ul>
-          <li>
-            <a href="" title="">
-              <img src="http://placehold.it/180x90" />
-              <hr>
-            </a>
-            <ul>
-              <li><a href="" title="">This is a title from thisas</a></li>
-              <li><a href="" title="">This is a title from thisas</a></li>
-              <li><a href="" title="">This is a title from thisas</a></li>
-            </ul><!-- / -->
-          </li>
-          <li>
-            <a href="" title="">
-              <img src="http://placehold.it/180x90" />
-              <hr>
-            </a>
-            <ul>
-              <li><a href="" title="">This is a title from thisas</a></li>
-              <li><a href="" title="">This is a title from thisas</a></li>
-              <li><a href="" title="">This is a title from thisas</a></li>
-            </ul><!-- / -->
-          </li>
-          <li>
-            <a href="" title="">
-              <img src="http://placehold.it/180x90" />
-              <hr>
-            </a>
-            <ul>
-              <li><a href="" title="">This is a title from thisas</a></li>
-              <li><a href="" title="">This is a title from thisas</a></li>
-              <li><a href="" title="">This is a title from thisas</a></li>
-            </ul><!-- / -->
-          </li>
-          <li>
-            <a href="" title="">
-              <img src="http://placehold.it/180x90" />
-              <hr>
-            </a>
-            <ul>
-              <li><a href="" title="">This is a title from thisas</a></li>
-              <li><a href="" title="">This is a title from thisas</a></li>
-              <li><a href="" title="">This is a title from thisas</a></li>
-            </ul><!-- / -->
-          </li>
-          <li>
-            <a href="" title="">
-              <img src="http://placehold.it/180x90" />
-              <hr>
-            </a>
-            <ul>
-              <li><a href="" title="">This is a title from thisas</a></li>
-              <li><a href="" title="">This is a title from thisas</a></li>
-              <li><a href="" title="">This is a title from thisas</a></li>
-            </ul><!-- / -->
-          </li>
-        </ul><!-- / -->
-
-      </section><!-- /.niche-bar -->
-      
-    </section><!-- / -->
-
-  </div>
-
-
-  <div class="row">
-
-      <section class="ad-bar col hidden-phone">
-        
-        <section class="ad-728x90 fl">             
-         <SCRIPT LANGUAGE=JavaScript>
-              <!--
-              OAS_RICH('Bottom');
-              //-->
-          </SCRIPT>
-        </section>
-        <section class="ad-246x90 fr hidden-tablet"><img src="http://placehold.it/246x90" /></section><!-- / -->
-
-      </section><!-- /.ad-bar -->
-      
-    </section><!-- / -->
-
-  </div>
-
-  <footer>
-    
-    <section class="footer-top-bar">
-
-      <div class="row cf">
+               <a href="" title="" class="tab-link">View All Sports Stories</a>
+            </li>
+          </ul>
           
-          <section class="footer-logo col">
-            <img src="http://placehold.it/134x37" />
-          </section><!-- / -->
-         
-         <ul class="footer-top-ad-links col">
-            <li><a href="" title="Classifieds"><i class="icon-classifieds"></i> Classifieds</a></li>
-            <li><a href="" title="Jobs"><i class="icon-jobs"></i> Jobs</a></li>
-            <li><a href="" title="Homes"><i class="icon-homes"></i>Homes</a></li>
-            <li><a href="" title="Autos"><i class="icon-autos"></i> Autos</a></li>
-            <li><a href="#top" title="Back To Top">Back to top &#9652;</a></li>
-         </ul><!-- / -->
+        </section><!-- /.tabs -->
+    </div>
 
-      </div>
-      
-    </section><!-- / -->
+  </div> <!-- /.row -->
 
+  <div class="row">
 
-    <div class="row">
+    <div class="col span_6">
 
-      <section class="footer-content">
+      <section class="niche-bar">
         
-      <ul class="footer-links col">
-        <li>
-          <h3>Navigation</h3>
+        <h2 class="blogs">Other Publications</h2>
+
           <ul>
-            <li><a href="" title="">News</a></li>
-            <li>|</li>
-            <li><a href="" title="Sports">Sports</a></li>
-            <li>|</li>
-            <li><a href="" title="Entertainment">Entertainment</a></li>
-            <li>|</li>
-            <li><a href="" title="Community">Community</a></li>
-            <li>|</li>
-            <li><a href="" title="Valley Life">Valley Life</a></li>
-            <li>|</li>
-            <li><a href="" title="Opinion">Opinion</a></li>
-            <li>|</li>
-            <li><a href="" title="Blogs">Blogs</a></li>
-            <li>|</li>
-            <li><a href="" title="Photo/Video">Photo/Video</a></li>
+            <li>
+              <a href="" title="">
+                <img src="http://placehold.it/180x90" />
+                <hr>
+              </a>
+              <ul>
+                <li><a href="" title="">This is a title from thisas</a></li>
+                <li><a href="" title="">This is a title from thisas</a></li>
+                <li><a href="" title="">This is a title from thisas</a></li>
+              </ul><!-- / -->
+            </li>
+            <li>
+              <a href="" title="">
+                <img src="http://placehold.it/180x90" />
+                <hr>
+              </a>
+              <ul>
+                <li><a href="" title="">This is a title from thisas</a></li>
+                <li><a href="" title="">This is a title from thisas</a></li>
+                <li><a href="" title="">This is a title from thisas</a></li>
+              </ul><!-- / -->
+            </li>
+            <li>
+              <a href="" title="">
+                <img src="http://placehold.it/180x90" />
+                <hr>
+              </a>
+              <ul>
+                <li><a href="" title="">This is a title from thisas</a></li>
+                <li><a href="" title="">This is a title from thisas</a></li>
+                <li><a href="" title="">This is a title from thisas</a></li>
+              </ul><!-- / -->
+            </li>
+            <li>
+              <a href="" title="">
+                <img src="http://placehold.it/180x90" />
+                <hr>
+              </a>
+              <ul>
+                <li><a href="" title="">This is a title from thisas</a></li>
+                <li><a href="" title="">This is a title from thisas</a></li>
+                <li><a href="" title="">This is a title from thisas</a></li>
+              </ul><!-- / -->
+            </li>
+            <li>
+              <a href="" title="">
+                <img src="http://placehold.it/180x90" />
+                <hr>
+              </a>
+              <ul>
+                <li><a href="" title="">This is a title from thisas</a></li>
+                <li><a href="" title="">This is a title from thisas</a></li>
+                <li><a href="" title="">This is a title from thisas</a></li>
+              </ul><!-- / -->
+            </li>
           </ul><!-- / -->
-        </li>
-        <li>
-          <h3>Support &amp; Contact</h3>
-          <ul>
-            <li><a href="" title="Subscribe">Subscribe</a></li>
-            <li>|</li>
-            <li><a href="" title="Pay Your Bill">Pay Your Bill</a></li>
-            <li>|</li>
-            <li><a href="" title="Vaction Start/Stop">Vaction Start/Stop</a></li>
-            <li>|</li>
-            <li><a href="" title="Delivery Issues">Delivery Issues</a></li>
-            <li>|</li>
-            <li><a href="" title="Place a Classified">Place a Classified</a></li>
-            <li>|</li>
-            <li><a href="" title="Online Ads">Online Ads</a></li>
-            <li>|</li>
-            <li><a href="" title="Print Ads">Print Ads</a></li>
-          </ul><!-- / -->
-        </li>
-        <li>
-          <h3>Regional Resources</h3>
-          <ul>
-            <li><a href="" title="Seattle Times">Seattle Times</a></li>
-            <li>|</li>
-            <li><a href="" title="Walla Walla Union-Bulletin">Walla Walla Union-Bulletin</a></li>
-            <li>|</li>
-            <li><a href="" title="The Issaquah Press">The Issaquah Press</a></li>
-            <li>|</li>
-            <li><a href="" title="Sammamish Review">Sammamish Review</a></li>
-            <li>|</li>
-            <li><a href="" title="Newcastle News">Newcastle News</a></li>
-            <li>|</li>
-            <li><a href="" title="SnoValley Star">SnoValley Star</a></li>
-            <li>|</li>
-            <li><a href="" title="Corporate">Corporate</a></li>
-          </ul><!-- / -->
-        </li>
-        <li>
-          <h3>Legal</h3>
-          <ul>
-            <li><a href="" title="Copyright">Copyright</a></li>
-            <li>|</li>
-            <li><a href="" title="Terms of Service">Terms of Service</a></li>
-            <li>|</li>
-            <li><a href="" title="Privact Policy">Privact Policy</a></li>
-            <li>|</li>
-            <li><a href="" title="User Commenting">User Commenting</a></li>
-          </ul><!-- / -->
-        </li>
-      </ul><!-- / -->
-       <ul class="footer-sublinks col">
-         <li>
-          <h3>Follow Us</h3>
-            <ul>
-              <li><a href="" title="Twitter"><i class="icon-footer-twitter"></i> Twitter</a></li>
-              <li><a href="" title="Facebook"><i class="icon-footer-facebook"></i>Facebook</a></li>
-              <li><a href="" title="RSS"><i class="icon-footer-rss"></i>RSS</a></li>
-              <li><a href="" title="Mobile"><i class="icon-footer-mobile"></i>Mobile</a></li>
-            </ul><!-- / -->
-         </li>
-       </ul><!-- / -->
 
       </section><!-- / -->
 
     </div>
 
+  </div><!-- /.row -->
+
+
+  <div class="row">
+
+    <div class="col span_6">
+
+      <section class="ad-bar-728x90 fl">
+
+        <script>
+          OAS_RICH('Bottom');
+        </script>
+        
+      </section><!-- / -->
+
+      <section class="ad-bar-246x90 fr hidden-tablet">
+
+        <img src="http://placehold.it/246x90" />
+        
+      </section><!-- / -->
+
+    </div>
+
+  </div> <!-- /.row -->
+
+
+  <footer>
+
+    <section class="footer-top-bar">
+    
+      <div class="row">
+
+        <div class="col span_1">
+
+          <section class="footer-logo">
+            <img src="http://placehold.it/134x37" />
+          </section>
+
+        </div>
+
+        <div class="col span_5">
+
+          <section class="footer-top-ads">
+            
+            <ul>
+              <li><a href="" title="Classifieds" class="sub"><i class="icon-list"></i> Classifieds</a></li>
+              <li><a href="" title="Jobs" class="sub"><i class="icon-user"></i> Jobs</a></li>
+              <li><a href="" title="Homes" class="sub"><i class="icon-tag"></i>Homes</a></li>
+              <li><a href="" title="Autos" class="sub"><i class="icon-road"></i> Autos</a></li>
+              <li><a href="" id="back-to-top" title="Back To Top">Back to top <i class="icon-arrow-up"></i></a></li>
+            </ul><!-- / -->
+
+          </section><!-- /.footer-top-ads -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /.footer-top-bar -->
+
+    <div class="row">
+
+      <div class="col span_5">
+
+        <section class="footer-links">
+          
+          <ul>
+            <li>
+              <h3>Navigation</h3>
+              <ul>
+                <li><a href="" title="">News</a></li>
+                <li class="hidden-phone">|</li>
+                <li><a href="" title="Sports">Sports</a></li>
+                <li class="hidden-phone">|</li>
+                <li><a href="" title="Entertainment">Entertainment</a></li>
+                <li class="hidden-phone">|</li>
+                <li><a href="" title="Community">Community</a></li>
+                <li class="hidden-phone">|</li>
+                <li><a href="" title="Valley Life">Valley Life</a></li>
+                <li class="hidden-phone">|</li>
+                <li><a href="" title="Opinion">Opinion</a></li>
+                <li class="hidden-phone">|</li>
+                <li><a href="" title="Blogs">Blogs</a></li>
+                <li class="hidden-phone">|</li>
+                <li><a href="" title="Photo/Video">Photo/Video</a></li>
+              </ul><!-- / -->
+            </li>
+            <li>
+              <h3>Support &amp; Contact</h3>
+              <ul>
+                <li><a href="" title="Subscribe">Subscribe</a></li>
+                <li class="hidden-phone">|</li>
+                <li><a href="" title="Pay Your Bill">Pay Your Bill</a></li>
+                <li class="hidden-phone">|</li>
+                <li><a href="" title="Vaction Start/Stop">Vaction Start/Stop</a></li>
+                <li class="hidden-phone">|</li>
+                <li><a href="" title="Delivery Issues">Delivery Issues</a></li>
+                <li class="hidden-phone">|</li>
+                <li><a href="" title="Place a Classified">Place a Classified</a></li>
+                <li class="hidden-phone">|</li>
+                <li><a href="" title="Online Ads">Online Ads</a></li>
+                <li class="hidden-phone">|</li>
+                <li><a href="" title="Print Ads">Print Ads</a></li>
+              </ul><!-- / -->
+            </li>
+            <li>
+              <h3>Regional Resources</h3>
+              <ul>
+                <li><a href="" title="Seattle Times">Seattle Times</a></li>
+                <li class="hidden-phone">|</li>
+                <li><a href="" title="Walla Walla Union-Bulletin">Walla Walla Union-Bulletin</a></li>
+                <li class="hidden-phone">|</li>
+                <li><a href="" title="The Issaquah Press">The Issaquah Press</a></li>
+                <li class="hidden-phone">|</li>
+                <li><a href="" title="Sammamish Review">Sammamish Review</a></li>
+                <li class="hidden-phone">|</li>
+                <li><a href="" title="Newcastle News">Newcastle News</a></li>
+                <li class="hidden-phone">|</li>
+                <li><a href="" title="SnoValley Star">SnoValley Star</a></li>
+                <li class="hidden-phone">|</li>
+                <li><a href="" title="Corporate">Corporate</a></li>
+              </ul><!-- / -->
+            </li>
+            <li>
+              <h3>Legal</h3>
+              <ul>
+                <li><a href="" title="Copyright">Copyright</a></li>
+                <li class="hidden-phone">|</li>
+                <li><a href="" title="Terms of Service">Terms of Service</a></li>
+                <li class="hidden-phone">|</li>
+                <li><a href="" title="Privact Policy">Privact Policy</a></li>
+                <li class="hidden-phone">|</li>
+                <li><a href="" title="User Commenting">User Commenting</a></li>
+              </ul><!-- / -->
+            </li>
+          </ul><!-- / -->
+
+        </section><!-- / -->
+
+      </div>
+
+      <div class="col span_1">
+
+        <section class="footer-sublinks">
+
+          <ul>
+            <li>
+              <h3>Follow Us</h3>
+              <ul>
+                <li><a href="" title="Twitter"><i class="icon-twitter-sign"></i> Twitter</a></li>
+                <li><a href="" title="Facebook"><i class="icon-facebook-sign"></i>Facebook</a></li>
+                <li><a href="" title="RSS"><i class="icon-align-left"></i>RSS</a></li>
+                <li><a href="" title="Mobile"><i class="icon-plane"></i>Mobile App</a></li>
+              </ul><!-- / -->
+            </li>
+          </ul><!-- / -->
+
+        </section>
+
+      </div>
+
+    </div><!-- /.row -->
+
   </footer>
 
-  <!-- Application JS -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
-  <script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
-  <script src="js/lionbars.js"></script>
-  <script src="js/app.js"></script>
 
+  <!-- Libraries -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js">\x3C/script>')</script>
+  <!-- Script -->
+  <script src="js/app.js"></script>
 </body>
 </html>

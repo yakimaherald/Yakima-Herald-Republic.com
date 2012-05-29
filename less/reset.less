@@ -1,113 +1,75 @@
-/*
- * reset.less
- *
- * Copyright 2012 We Are Difrnt
- *
- * :: RESET with HTML5
- * :: Thanks to Normalize
- *
- *
- */
-html, body{
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr,
+a, abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strong, sub, sup, tt, var,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
 }
-h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,
-address,cite,code,del,dfn,em,img,q,s,samp,small,strike,strong,
-sub,sup,tt,var,dd,dl,dt,li,ol,ul,fieldset,form,label,legend,button,table,
-caption,tbody,tfoot,thead,tr,th,td {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 100%;
-  line-height: 1;
-  font-family: inherit;
+html{
+    font-size: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
 }
+article, aside, details, figcaption, figure, footer,
+header, hgroup, menu, nav, section {
+  display: block;
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-ol, ul {
-  list-style: none;
+
+strong, b, mark {
+  font-weight: 600;
+  font-style: inherit;
 }
-q:before,q:after,blockquote:before,blockquote:after {
-  content: "";
+
+em, i, cite, q, address, dfn, var {
+  font-style: italic;
+  font-weight: inherit;
 }
-html {
-  overflow-y: scroll;
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+
+abbr[title], dfn[title] {
+  cursor: help;
+  border-bottom: 1px dotted;
 }
-a:focus {
-  outline: thin dotted;
+
+ins {
+  border-bottom: 1px solid;
 }
-a:hover, a:active {
-  outline: 0;
+
+a, u, ins {
+  text-decoration: none;
 }
-article,aside,details,
-figcaption,figure,footer,
-header,hgroup,nav,section {
-  display: block;
+
+del, s {
+  text-decoration: line-through;
 }
-audio, canvas, video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
+
+pre, code, samp, kbd {
+  font-family: "Inconsolata", "Monaco", "Consolas", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
 }
-audio:not([controls]) {
-  display: none;
-}
-sub, sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-sup {
-  top: -0.5em;
-}
-sub {
-  bottom: -0.25em;
-}
+
 img {
-  border: 0;
-  -ms-interpolation-mode: bicubic;
-  image-rendering: optimizeQuality; 
-  height: auto !important;
+  border: none;
+  font-style: italic;
 }
-button,input,select,textarea {
-  font-size: 100%;
-  margin: 0;
-  vertical-align: baseline;
-  *vertical-align: middle;
-}
-button, input {
-  line-height: normal;
-  *overflow: visible;
-}
-button::-moz-focus-inner, input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-button,input[type="button"],input[type="reset"],input[type="submit"] {
-  cursor: pointer;
-  -webkit-appearance: button;
-}
-input[type="search"] {
-  -webkit-appearance: textfield;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-}
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
+
+input,button,
+select, option, optgroup,
 textarea {
-  overflow: auto;
-  vertical-align: top;
+  font: inherit;
+  font-size: 100%; /* 1 */
+  margin: 0; /* 2 */
+  vertical-align: baseline; /* 3 */
+  *vertical-align: middle; /* 3 */
 }
-/* /ht Ethan Marcotte - http://front.ie/l8rJaA */
-img, embed, object, video { max-width: 100%; }

@@ -5,8 +5,24 @@
  *
  * Developed by @utroda, http://www.wearedifrnt.com.
  */
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
-
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url('http://themes.googleusercontent.com/static/fonts/opensans/v6/EInbV5DfGHOiMmvb1Xr-hqRDOzjiPcYnFooOUGCOsRk.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url('http://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSqRDOzjiPcYnFooOUGCOsRk.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff') format('woff');
+}
 /*------------------------------------*\
   :: Links
 \*------------------------------------*/
@@ -27,7 +43,7 @@
 @dark-red: #c92644;
 @green:#92c65e;
 @dark-green:#4f7432;
-@blue:#8bc0cc;
+@blue:#61a9b9;
 @dark-blue:#649faf;
 @orange:#f27a2a;
 @dark-orange:#c13a05;
@@ -36,16 +52,16 @@
   :: Base Typography
 \*------------------------------------*/
 @base-font-size: 13px;
-@base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-@base-line-height: 18px;
-@alt-font-family: "Open Sans", sans-serif;
-@color:#666;
+@base-font-family: Helvetica Neue, Helvetica, Arial;
+@base-line-height: 19px;
+@alt-font-family: "Open Sans";
+@color:#434343;
 /*------------------------------------*\
   :: Base Headings
 \*------------------------------------*/
 @heading-color:#2d2d2d;
 @header-sub-color:#b7b3b3;
-@heading-weight:800;
+@heading-weight:600;
 @headings-font-family:    inherit; // empty to use BS default, @baseFontFamily
 @headings-font-weight:    bold;    // instead of browser default, bold
 
@@ -53,4 +69,4 @@
   :: Base Image Paths
 \*------------------------------------*/
 @icon-path: "../images/icons/icons.png";
-@img: "../images"; // to use must wrap in @{img}
+@img: "../img"; // to use must wrap in @{img}
