@@ -106,10 +106,10 @@
 
 				var menuTimer;
 
-				$('.main-nav>ul>li>a[data-section]').each(function(i){
+				$('.main-nav>ul>li>a.fly').each(function(i){
 
 					var anchor = $(this);
-					var menu = $('div[data-menu="'+$(this).data('section')+'"]"eq(0)');
+					var menu = $('div[data-menu="'+$(this).attr('rel')+'"]"eq(0)');
 					var menuid = menu.attr('id');
 					var anchorid = anchor.attr('id');
 
