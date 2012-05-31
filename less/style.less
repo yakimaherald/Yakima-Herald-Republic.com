@@ -15,7 +15,8 @@ body{
 	background:#fafafa; color:@color;
 	font-family:@alt-font-family; font-size:13px;
 	line-height:@base-line-height;
-	-webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing: subpixel-antialiased;
+	.text-shadow(0 0 1px rgba(0,0,0,0.1));
 }
 
 ::-moz-selection { background: #cd3737; color: #fff; text-shadow: none; }
