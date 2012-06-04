@@ -72,7 +72,7 @@ h6{ font-size:11px; }
 \*------------------------------------*/
 .btn{
 	display:inline-block; padding: 9px 34px 11px;
-	background:#e9e9e9; color:#000;
+	background:@bgcolor; color:#000;
 	text-align:center; text-decoration:none;
 	font-weight:600; font-size:13px;
 	line-height:1; position: relative;
@@ -452,7 +452,7 @@ header{
 			display:block; height:39px;
 			padding:0 9px; line-height:40px;
 			margin:0 -1px 0 0; color:#b9b9b9;
-			background:#e9e6e1; font-weight:bold;
+			background:@cream; font-weight:bold;
 		}
 		.tab a.active{
 			background:#eeeeee; color:#555;
@@ -467,7 +467,7 @@ header{
 		.tabs-content .story img{ margin:5px; border:1px solid #aea494; float:left; width:100%; max-width:75px; max-height:50px; }
 		.tabs-content .tab-link{
 			width:100%; display:block;
-			text-align:center; background:#e9e6e1;
+			text-align:center; background:@cream;
 			padding:10px 0; font-weight:bold;
 			float:left;
 		}
@@ -624,7 +624,7 @@ footer{
     	.border-radius(5px);
 
     	a, a:visited{
-    		color:#0982DF; border-bottom:1px solid #DDDDDD;
+    		color:#0982DF; border-bottom:1px solid @light-grey;
     	}
     }
 	.twitter-status-notch{ 
@@ -723,7 +723,7 @@ footer{
 	}
 
 	.article-body p a, .article-body p a:visited{
-		color:#0982DF; border-bottom:1px solid #DDDDDD;
+		color:#0982DF; border-bottom:1px solid @light-grey;
 	}
 
 	.article-body blockquote{
@@ -739,14 +739,14 @@ footer{
     	}
 	}
 
-	.related-content{border-top:2px solid #DDDDDD; overflow: hidden;}
+	.related-content{border-top:2px solid @light-grey; overflow: hidden;}
 	.related-stories{ margin-top:20px; }
 
 	.related-stories ul{ list-style:square inside; text-indent:10px;  }
 	.related-stories li{ width:100%; margin-bottom:10px; }
 
 	.endstory-share{
-		border-top:2px solid #DDDDDD; border-bottom:2px solid #DDDDDD;
+		border-top:2px solid @light-grey; border-bottom:2px solid @light-grey;
 		background:#f6f6f6; margin-top:20px;
 		overflow: hidden; padding:10px 5px;
 	}
@@ -767,32 +767,34 @@ footer{
 		p{ margin-bottom:3px; }
 	}
 
- /* Daily */
+/*------------------------------------*\
+  :: Buttons
+\*------------------------------------*/
 	
-	.story{ border-bottom:1px solid #dcd8d0; padding:5px; height:auto; overflow: hidden; }
-	.story img{ margin:5px; border:1px solid #aea494; float:left; width:100%; max-width:75px; max-height:50px; }
+.story{ border-bottom:1px solid #dcd8d0; padding:5px; height:auto; overflow: hidden; }
+.story img{ margin:5px; border:1px solid #aea494; float:left; width:100%; max-width:75px; max-height:50px; }
 
-	.daily-pagi > .pagi { width:100%; text-align:center; overflow: hidden; margin-top:5px; background:#e9e6e1; }
-	.daily-pagi > .pagi ul{margin:2px 0;}
-	.daily-pagi > .pagi ul li{display:inline; font-size:11px;}
-	.daily-pagi > .pagi ul li a, .daily-pagi > .pagi ul li a:visited{
-		font-size:12px; font-weight:bold;
-		display:inline-block; border:1px solid #2d2d2d;
-		padding:2px 5px 2px 5px;
+.daily-pagi > .pagi { width:100%; text-align:center; overflow: hidden; margin-top:5px; background:@cream; }
+.daily-pagi > .pagi ul{margin:2px 0;}
+.daily-pagi > .pagi ul li{display:inline; font-size:11px;}
+.daily-pagi > .pagi ul li a, .daily-pagi > .pagi ul li a:visited{
+	font-size:12px; font-weight:bold;
+	display:inline-block; border:1px solid @brown;
+	padding:2px 5px 2px 5px;
 
-		.border-radius(3px);
-		.ie7-inline-block;
-	}
+	.border-radius(3px);
+	.ie7-inline-block;
+}
 
 
-	.daily .pop-story{
-		width:30%; float:left;
-		margin:15px 1%;
-	}
+.daily .pop-story{
+	width:30%; float:left;
+	margin:15px 1%;
+}
 
-	.daily ul{ float:left; margin-top:15px; width:68%;}
-	.daily li{ margin:5px; }
-	.daily li a, .daily li a:visited{
-		display:block; border-bottom:1px solid #2d2d2d;
-		width:100%;
-	}
+.daily ul{ float:left; margin-top:15px; width:68%;}
+.daily li{ margin:5px; }
+.daily li a, .daily li a:visited{
+	display:block; border-bottom:1px solid @brown;
+	width:100%;
+}
