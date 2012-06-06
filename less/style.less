@@ -123,7 +123,17 @@ button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="but
 	input[type=submit].medium.btn	{ padding: 8px 34px 9px; }
 	input[type=submit].large.btn		{ padding: 9px 48px 10px; }
 }
-
+/* Text input and textarea font and padding */
+input.input-text, textarea { font-size: 13px; padding: 4px 3px 2px; background: #fff; }
+input.input-text:focus, textarea:focus { outline: none !important; }
+input.input-text.oversize, textarea.oversize { font-size: 18px !important; padding: 4px 5px !important; }
+input.input-text:focus, textarea:focus { background: #f9f9f9; }
+/* Text input and textarea sizes */
+input.input-text, textarea { width: 254px; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
+input.small, textarea.small { width: 134px; }
+input.medium, textarea.medium { width: 254px; }
+input.large, textarea.large { width: 434px; }
+input.expand, textarea.expand { width: 100%; }
 /*------------------------------------*\
   :: Lists OL & UL
 \*------------------------------------*/
@@ -803,9 +813,110 @@ footer{
   :: Search Results
 \*------------------------------------*/
 
-.search-results input.search-results-text{
-	padding:5px; width:90%;
-	.border-radius(5px);
+.search-results .search-form{
+	margin-top:10px;
 }
-.search-results .result > img{float:left; margin-right:1%;}
+
+.search-results .search-form .input-text{
+	border:none; color:@color;
+	border:1px solid #bcb3a0;
+	padding:11px 10px 13px 10px;
+	margin:10px auto; font-size:18px;
+
+	.border-radius(5px);
+	.box-shadow(0 1px 0 #fff);
+}
+
+.result > img{float:left; margin-right:1%;}
+.result{ margin:10px 0 10px; }
 .search-results h1{ border-bottom:1px solid @brown;}
+/*------------------------------------*\
+  :: Article-Gallery
+\*------------------------------------*/
+.article-gallery{
+	background:@bgcolor; height:615px;
+}
+
+.article-gallery aside{
+	float:right; height:615px;
+	width:30%; background:@light-grey;
+}
+
+	.article-gallery aside .caption{
+		width:280px; height:325px;
+		padding:10px;
+	}
+
+	.article-gallery aside .ad-300x250{
+		width:300px; height:250px;
+		overflow: hidden; scroll:none;
+		border:none; background:@light-grey;
+	}
+
+.article-gallery .pane{
+	width:70%; float:left;
+	height:500px; background:@brown;
+
+	img{
+	    position:absolute;
+	    left:0px;
+	    top:0px;
+	}
+}
+
+.article-gallery .controls{
+	height:40px; width:70%;
+	background:@cream; margin-top:5px;
+	float:left; position: relative;
+
+	.prev{
+		float:left; line-height:40px;
+		cursor: pointer; margin-left:10px;
+		color:@link;
+	}
+
+	.counter{
+		position: absolute; left:49.9%;
+		line-height:40px; color:@link;
+		z-index:1; width:50px;
+	}
+
+	.next{
+		float:right; line-height:40px;
+		cursor: pointer; margin-right:10px;
+		color:@link;
+	}
+}
+
+.article-gallery .thumbnail-pane{
+	width:70%; height:60px;
+	float:left; margin-top:10px;
+	background:@light-grey;
+	position: relative;
+}
+
+	.thumbnail-pane .panePrev, .thumbnail-pane .paneNext{
+		width:40px; height:60px;
+		position: absolute;
+		text-align:center; line-height:60px;
+		cursor:pointer;
+	}
+
+	.thumbnail-pane .panePrev{ left:0; top:50%; margin:-30px 0 0 0;}
+	.thumbnail-pane .paneNext{ right:0; top:50%; margin:-30px 0 0 0; }
+
+	.thumbnails{
+		width:600px; margin:5px auto;
+		overflow:hidden;
+	}
+
+		.thumbs{
+			width:auto; display:inline;
+			white-space:nowrap; text-align:left;
+			height:60px; position: relative;
+			top:0; left:0;
+		}
+
+		.thumbs img{ margin: 0 5px; cursor: crosshair;}
+
+		
